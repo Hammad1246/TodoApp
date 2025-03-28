@@ -10,7 +10,7 @@ function Todos() {
     const fetchTodos = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/v1/todo/getTodo",
+          "https://todo-app-server-zeta-sage.vercel.app/api/v1/todo/getTodo",
           {
             method: "GET",
             headers: {
@@ -37,7 +37,7 @@ function Todos() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        "http://localhost:5000/api/v1/todo/createTodo",
+        "https://todo-app-server-zeta-sage.vercel.app/api/v1/todo/createTodo",
         {
           method: "POST",
           headers: {
@@ -67,7 +67,7 @@ function Todos() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://localhost:5000/api/v1/todo/deleteTodo/${id}`,
+        `https://todo-app-server-zeta-sage.vercel.app/api/v1/todo/deleteTodo/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -94,7 +94,7 @@ function Todos() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://localhost:5000/api/v1/todo/updateTodo/${id}`,
+        `https://todo-app-server-zeta-sage.vercel.app/api/v1/todo/updateTodo/${id}`,
         {
           method: "POST",
           headers: {
