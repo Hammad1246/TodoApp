@@ -5,7 +5,7 @@ const app = express();
 
 app.use(
   cors({
-    origin:['https://todo-app-server-zeta-sage.vercel.app ', 'http://localhost:5173'],
+    origin:['https://todo-app-eight-liart-80.vercel.app/ ', 'http://localhost:5173'],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
